@@ -3,18 +3,34 @@ import java.util.*;
 public class Main
 {
 	public static void main(String[] args)
-	{
-		System.out.println("Hello World!");
+	{{  Scanner scanner=new Scanner(System.in);
+System.out.println("Enter no.of rows");
+			int row=scanner.nextInt();
+			for(int i=1;i<=row;i++){
+				for(int j=1;j<=i;j++){
+					System.out.print(j);
+				}
+				System.out.println();
+			}
+			for(int a=1;a<=row;a++){
+				for(int b=row-1;b>=a;b--){
+					System.out.print(b);
+				}
+				System.out.println();
+			}
+		}
 
-		Scanner input = new Scanner(System.in);
 
-		System.out.print("Enter a number: ");
-		double number1 = input.nextDouble();
-
-		System.out.print("Enter second number: ");
-		double number2 = input.nextDouble();
-
-		double product = number1 * number2;
-		System.out.printf("The product of both numbers is: %f", product);
 	}
+	/*  output format
+	 *
+	 **
+	 ***
+	 ****
+	 *****
+	 ****
+	 ***
+	 **
+	 *     */
+		
 }
